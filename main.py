@@ -23,7 +23,7 @@ async def hello(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 @bot.command()
-async def mem(ctx):
+async def animals(ctx):
     img_name = random.choice(os.listdir('images'))
     with open(f'images/{img_name}', 'rb') as f:
                     picture = discord.File(f)
@@ -41,4 +41,4 @@ async def duck(ctx):
     '''Setelah kita memanggil perintah bebek (duck), program akan memanggil fungsi get_duck_image_url'''
     image_url = get_duck_image_url()
     await ctx.send(image_url)
-bot.run("MTIwMDY2NzU5MDQ2OTYzNjEwNg.GkDWQd.TiNstyAvI_fSffq6rbnc0IRd7_UIErETOATI-A")    
+bot.run("TOKEN")    
